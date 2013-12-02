@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory
+            android:title="UDP Preferences">
+            
+        <EditTextPreference
+                android:key="UDP_ip_add"
+                android:title="Enter IP Address"
+                android:summary="IP Address of host computer"
+                android:dialogTitle="Enter in format xxx.xxx.x.x"
+                 />
+        <EditTextPreference
+                android:key="UDP_port_num"
+                android:title="Enter Port Number"
+                android:summary="Port number to send UDP messages on"
+                android:dialogTitle="Enter in format xxxx"
+                android:inputType="number"
+                 />
+
+        <PreferenceScreen
+                android:title="Test UDP Connection"
+                android:summary="Try sending a UDP message">
+
+            <intent android:action="android.intent.action.VIEW"
+                    android:targetPackage = "com.ASL.ltlmoplocalize" 
+                    android:targetClass = "com.ASL.ltlmoplocalize.UDPActivity"/>
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+                
+
+
+
+    
+
+    
+</PreferenceScreen>
