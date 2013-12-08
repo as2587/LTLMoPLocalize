@@ -27,7 +27,18 @@
                     android:targetClass = "com.ASL.ltlmoplocalize.UDPActivity"/>
 
         </PreferenceScreen>
+ </PreferenceCategory>
+ <PreferenceCategory
+            android:title="Tag Colors">
+        <PreferenceScreen
+                android:title="Select the Tag Colors"
+                android:summary="Click on your robot and marker tags to set their colors.">
 
+            <intent android:action="android.intent.action.VIEW"
+                    android:targetPackage = "com.ASL.ltlmoplocalize" 
+                    android:targetClass = "com.ASL.ltlmoplocalize.ColorBlobDetectionActivity"/>
+
+        </PreferenceScreen>
     </PreferenceCategory>
                 
 

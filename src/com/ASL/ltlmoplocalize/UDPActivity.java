@@ -99,6 +99,7 @@ public class UDPActivity extends Activity {
 		port_display.setText("Port Number: "+isendToPort);
 		sendToPort = Integer.parseInt(isendToPort);
 		Log.d("UDP", "Loaded Port:" + sendToPort);
+		
 
 	}
 	

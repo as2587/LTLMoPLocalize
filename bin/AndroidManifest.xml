@@ -10,6 +10,8 @@
 	<uses-permission android:name="android.permission.INTERNET"/> 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
     
+
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -32,6 +34,23 @@
             android:name=".UDPActivity" 
             android:label="UDP Connection Test">
         </activity>
+        <activity
+            android:name=".ColorBlobDetectionActivity"
+            android:label="Processsing"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>
     </application>
-
+    
+    <supports-screens android:resizeable="true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:anyDensity="true" />
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+	<uses-feature android:name="android.hardware.camera" android:required="false"/>
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+	<uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+	<uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
 </manifest>

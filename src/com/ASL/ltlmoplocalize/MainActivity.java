@@ -7,14 +7,23 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
-	String TAG = "MainActivity";
+	String TAG = "MyActivity";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		Button sendButton = (Button) findViewById(R.id.localizeStart);
+		sendButton.setOnClickListener(new View.OnClickListener(){
+			public void onClick(View v){
+				Log.d(TAG, "Going to Start Localize!");
+			}
+		});
 	}
 
 	@Override
