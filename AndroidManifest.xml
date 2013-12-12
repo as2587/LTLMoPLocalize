@@ -34,6 +34,15 @@
             android:name=".UDPActivity" 
             android:label="UDP Connection Test">
         </activity>
+        
+        <activity
+            android:name =".MainProcess"
+            android:label="Localize"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+>
+        </activity>
+        
         <activity
             android:name=".ColorBlobDetectionActivity"
             android:label="Processsing"

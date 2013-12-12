@@ -40,7 +40,33 @@
 
         </PreferenceScreen>
     </PreferenceCategory>
-                
+	<PreferenceCategory
+	    android:title="Marker Locations">
+        <EditTextPreference
+                android:key="marker_1"
+                android:title="Marker 1 Coordinates"
+                android:summary="Enter the coordinates of Marker 1"
+                android:dialogTitle="Enter in format X1,Y1"
+                 />
+         <EditTextPreference
+                android:key="marker_2"
+                android:title="Marker 2 Coordinates"
+                android:summary="Enter the coordinates of Marker 2"
+                android:dialogTitle="Enter in format X2,Y2"
+                 />
+          <EditTextPreference
+                android:key="marker_3"
+                android:title="Marker 3 Coordinates"
+                android:summary="Enter the coordinates of Marker 3"
+                android:dialogTitle="Enter in format X3,Y3"
+                 />
+           <EditTextPreference
+                android:key="marker_4"
+                android:title="Marker 4 Coordinates"
+                android:summary="Enter the coordinates of Marker 4"
+                android:dialogTitle="Enter in format X4,Y4"
+                 />
+	</PreferenceCategory>
 
 
 

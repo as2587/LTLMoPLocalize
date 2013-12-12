@@ -10,6 +10,7 @@ import org.opencv.core.Mat;
 import org.opencv.core.MatOfPoint;
 import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
+//Color Blob Detector class from OpenCV4Android examples. Used with slight modification. 
 
 public class ColorBlobDetector {
     // Lower and Upper bounds for range checking in HSV color space

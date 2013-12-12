@@ -1,13 +1,17 @@
 package com.ASL.ltlmoplocalize;
+/*
+ * Author: Abhishek Sriraman
+ * Last Modified: 12/12/13
+ */
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import android.util.Log;
 
+//Class that sends UDP Message
 public class Client implements Runnable{
-	//private final static String SERVER_ADDRESS = "192.168.1.6"; //IP of Server 
-	//private final static int SERVER_PORT = 5005;
+
 	private String message;
 	private String SERVER_ADDRESS;
 	private int SERVER_PORT;
@@ -29,7 +33,7 @@ public class Client implements Runnable{
 		
 			//Preparing the packet
 			byte[] buf = (message).getBytes();
-			Log.d("my", "Sent: " + message);
+			Log.d("udp", "Sent: " + message);
 			DatagramPacket packet = new DatagramPacket(buf, buf.length, serverAddr, SERVER_PORT);
 			
 			socket.send(packet);

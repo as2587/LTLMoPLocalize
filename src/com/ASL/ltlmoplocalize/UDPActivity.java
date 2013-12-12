@@ -1,4 +1,8 @@
 package com.ASL.ltlmoplocalize;
+/*
+ * Author: Abhishek Sriraman
+ * Last Modified: 12/12/13
+ */
 
 import com.ASL.ltlmoplocalize.R;
 
@@ -18,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.util.Log;
 
+//Activity called from preference menu to test UDP connection. Allows user to type and send message to UDP server (host computer)
 public class UDPActivity extends Activity {
 	private WifiManager wifiManager; 
 	String sendToIp;
@@ -68,12 +73,6 @@ public class UDPActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 
-		/*
-		 * Because it's onlt ONE option in the menu.
-		 * In order to make it simple, We always start SetPreferenceActivity
-		 * without checking.
-		 */
-		
 		Intent intent = new Intent();
         intent.setClass(UDPActivity.this, SetPreferenceActivity.class);
         startActivityForResult(intent, 0); 

@@ -1,4 +1,8 @@
 package com.ASL.ltlmoplocalize;
+/*
+ * Author: Abhishek Sriraman
+ * Last Modified: 12/12/13
+ */
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -10,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+//Initial Activity when application is opened. Contains link to start image processing. 
 public class MainActivity extends Activity {
 	String TAG = "MyActivity";
 
@@ -22,6 +27,9 @@ public class MainActivity extends Activity {
 		sendButton.setOnClickListener(new View.OnClickListener(){
 			public void onClick(View v){
 				Log.d(TAG, "Going to Start Localize!");
+				Intent intent = new Intent();
+				intent.setClass(MainActivity.this, MainProcess.class);
+				startActivityForResult(intent, 0);
 			}
 		});
 	}

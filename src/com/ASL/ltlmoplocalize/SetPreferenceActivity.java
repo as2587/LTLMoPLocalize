@@ -1,14 +1,19 @@
 package com.ASL.ltlmoplocalize;
+/*
+ * Author: Abhishek Sriraman
+ * Last Modified: 12/12/13
+ */
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 
+//Preference Activity
 public class SetPreferenceActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+
 		super.onCreate(savedInstanceState);
 		
 		getFragmentManager().beginTransaction().replace(android.R.id.content,
@@ -19,10 +24,8 @@ public class SetPreferenceActivity extends Activity {
 
 		@Override
 		public void onCreate(Bundle savedInstanceState) {
-			// TODO Auto-generated method stub
 			super.onCreate(savedInstanceState);
-			
-			// Load the preferences from an XML resource
+
 	        addPreferencesFromResource(R.xml.preferences);
 		}
 
