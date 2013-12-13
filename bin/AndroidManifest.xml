@@ -44,7 +44,7 @@
         </activity>
         
         <activity
-            android:name=".ColorBlobDetectionActivity"
+            android:name=".ColorSelectActivity"
             android:label="Processsing"
             android:screenOrientation="landscape"
             android:configChanges="keyboardHidden|orientation">

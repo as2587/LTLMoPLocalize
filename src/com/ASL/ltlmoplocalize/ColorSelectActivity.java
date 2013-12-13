@@ -31,7 +31,7 @@ import android.view.View.OnTouchListener;
 import android.widget.Button;
 
 //Activity used in preference menu to set TAG colors. Nearly identical to OpenCV4Android sample with slight modifications. 
-public class ColorBlobDetectionActivity extends Activity implements OnTouchListener, CvCameraViewListener2 {
+public class ColorSelectActivity extends Activity implements OnTouchListener, CvCameraViewListener2 {
     private static final String  TAG              = "OCVSample::Activity";
     private static final String  myTAG              = "myDebug";
     private boolean              mIsColorSelected = false;
@@ -54,7 +54,7 @@ public class ColorBlobDetectionActivity extends Activity implements OnTouchListe
                 {
                     Log.i(TAG, "OpenCV loaded successfully");
                     mOpenCvCameraView.enableView();
-                    mOpenCvCameraView.setOnTouchListener(ColorBlobDetectionActivity.this);
+                    mOpenCvCameraView.setOnTouchListener(ColorSelectActivity.this);
                 } break;
                 default:
                 {
@@ -64,7 +64,7 @@ public class ColorBlobDetectionActivity extends Activity implements OnTouchListe
         }
     };
 
-    public ColorBlobDetectionActivity() {
+    public ColorSelectActivity() {
         Log.i(TAG, "Instantiated new " + this.getClass());
     }
 
