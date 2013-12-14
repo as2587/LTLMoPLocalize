@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="org.cornellASL.ltlmoplocalize.MainActivity"
+            android:name="org.cornell_ASL.ltlmoplocalize.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,16 +27,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.cornellASL.ltlmoplocalize.SetPreferenceActivity"
+            android:name="org.cornell_ASL.ltlmoplocalize.SetPreferenceActivity"
             android:label="Settings" >
         </activity>
         <activity 
-            android:name="org.cornellASL.ltlmoplocalize.UDPActivity" 
+            android:name="org.cornell_ASL.ltlmoplocalize.UDPActivity" 
             android:label="UDP Connection Test">
         </activity>
         
         <activity
-            android:name ="org.cornellASL.ltlmoplocalize.MainProcess"
+            android:name ="org.cornell_ASL.ltlmoplocalize.MainProcess"
             android:label="Localize"
             android:screenOrientation="landscape"
             android:configChanges="keyboardHidden|orientation"
@@ -44,7 +44,7 @@
         </activity>
         
         <activity
-            android:name="org.cornellASL.ltlmoplocalize.ColorSelectActivity"
+            android:name="org.cornell_ASL.ltlmoplocalize.ColorSelectActivity"
             android:label="Processsing"
             android:screenOrientation="landscape"
             android:configChanges="keyboardHidden|orientation">
